@@ -8,6 +8,7 @@ const ProductFeed = ({ products }) => {
        <Product
        key={id}
        title={title}
+       id={id}
        price={price}
        image={image}
        category={category}
@@ -23,6 +24,7 @@ const ProductFeed = ({ products }) => {
        key={id}
        title={title}
        price={price}
+       id={id}
        image={image}
        category={category}
        description={description}
@@ -31,12 +33,13 @@ const ProductFeed = ({ products }) => {
     ))}
       </div>
 
-      {products.slice(4, products.lenght).map(({id, title, price, description, category, image }) => (
+      {products.slice(4, products.length).map(({id, title, price, description, category, image }) => (
       <Product
        key={id}
        title={title}
        price={price}
        image={image}
+       id={id}
        category={category}
        description={description}
        />
